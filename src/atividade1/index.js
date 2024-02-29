@@ -10,6 +10,21 @@ export default function Index(){
             <Text style={StyleSheet.paragraph}>
                 Exemplo 2
             </Text>
+
+            {/* lista bem vindo - ex. comentario*/}
+            <Text style={{textAlign:'center'}}>
+                Olá Mario!
+            </Text>
+            <Text style={{textAlign:'center'}}>
+                Olá Maria!
+            </Text>
+            <Text style={{textAlign:'center'}}>
+                Olá Bruna!
+            </Text>
+            <Text style={{textAlign:'center'}}>
+                Olá Bruno!
+            </Text>
+
         </View>
     );
 }
@@ -30,7 +45,7 @@ const styless = StyleSheet.create({
     },
     image:{
         width:'90%',
-        height:'15%'
+        height:'15%',
         margin:10,
     },
 })
