@@ -26,13 +26,14 @@
 import * as React from 'react';
 import {View, StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
+import Index from './src/atividade1/index.js';
 
-import Index from './atividade1/index';
+
 
 export default function App(){
   return(
-    <View style={StyleSheet.container}>
-      <index/>
+    <View style={styles.container}>
+      <Index />
     </View>
   );
 }
@@ -40,8 +41,10 @@ export default function App(){
 const styles=StyleSheet.create({
   container:{
     flex:1,
+    width:'100%',
+    height:'100%',
     justifyContent:'center',
-    paddingTop: Constants.statusBarHeight,
+    alignItems:'center',
     backgroundColor:'#90CAF9',
     padding:8,
   },
