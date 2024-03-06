@@ -27,13 +27,15 @@ import * as React from 'react';
 import {View, StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
 import Index from './src/atividade1/index.js';
+import Exemplo_3 from './src/ex_3/index.js';
 
 
 
 export default function App(){
   return(
     <View style={styles.container}>
-      <Index />
+      {/* <Index /> */}
+      <Exemplo_3/>
     </View>
   );
 }
