@@ -50,4 +50,5 @@ const styles=StyleSheet.create({
     backgroundColor:'#90CAF9',
     padding:8,
   },
+
 });
