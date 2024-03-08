@@ -5,14 +5,15 @@ import styles from "./styles";
 
 export default function Exemplo_3 () {
 
-    let numero = 0;
+    const[numero,setNumero] = useState(0);
 
     function Ola (nome) {
         alert(`Olá ${nome}`);
     }
 
     function incremento(){
-        numero++;
+        const inc = numero +1;
+        setNumero(inc);
         // console.log(numero);
     }
 
