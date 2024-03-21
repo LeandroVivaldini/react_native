@@ -28,14 +28,17 @@ import {View, StyleSheet} from 'react-native';
 import Constants from 'expo-constants';
 // import Index from './src/atividade1/index.js';
 // import Exemplo_3 from './src/ex_3/index.js';
-import Index_3 from './src/atividade3';
-
+// import Index_3 from './src/atividade3';
+import Exemplo4 from './src/ex_4';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App(){
   return(
     <View style={styles.container}>
       {/* <Index /> */}
-      <Index_3/>
+      {/* <Index_3/> */}
+      <Exemplo4/>
+      <StatusBar styles='auto'/>
     </View>
   );
 }
@@ -43,12 +46,9 @@ export default function App(){
 const styles=StyleSheet.create({
   container:{
     flex:1,
-    // width:'100%',
-    // height:'100%',
-    justifyContent:'center',
-    // paddingTop: Constants.statusBarHeight,
-    alignItems:'center',
-    backgroundColor:'#9E9E9E',
+    // justifyContent:'center',
+    // alignItems:'center',
+    backgroundColor:'#B71C1C',
     padding:8,
   },
 

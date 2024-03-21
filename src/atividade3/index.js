@@ -34,21 +34,22 @@ export default function Index_3() {
                 {/* <Text style={styles.textCounter}>{numero}</Text> */}
                 
                 <View style={styles.botaoContainer}>
-                <TouchableOpacity 
-                onPress={() => Add()} 
-                style={styles.button}>
-                    <Text style={styles.textButton}>
-                        + 1
-                    </Text>
-                </TouchableOpacity>
-                
-                <Text style={styles.textCounter}>{numero}</Text>
                 
                 <TouchableOpacity 
                 onPress={() => Remove()} 
                 style={styles.button}>
                     <Text style={styles.textButton}>
                         -  1
+                    </Text>
+                </TouchableOpacity>
+                
+                <Text style={styles.textCounter}>{numero}</Text>
+                
+                <TouchableOpacity 
+                onPress={() => Add()} 
+                style={styles.button}>
+                    <Text style={styles.textButton}>
+                        + 1
                     </Text>
                 </TouchableOpacity>
                </View>
@@ -72,13 +73,14 @@ const styles = StyleSheet.create({
         backgroundColor:'#F5F5F5',
         padding:8,
         width:'100%',
+        alignItems:'center', //Deixa os botões apenas no tamanho necessário, remover ele para ficar conforma o tamanho da tela 
     },
     paragraph:{
         margin:24,
         fontSize:26,
         fontWeight:'bold',
         textAlign:'center',
-        color: '#9E9E9E',
+        color: '#000',
     },
     button:{
         backgroundColor:'#9E9E9E',
@@ -88,22 +90,25 @@ const styles = StyleSheet.create({
         padding:8,
         borderWidth:4,
         borderRadius:20,
+        margin:8,
     },
     textButton:{
         fontSize:20,
-        color:'#fff',
+        color:'#000',
         textAlign:'center',
+        fontWeight:'bold',
     },
     counter:{
         borderWidth:4,
         vorderColor:'#9E9E9E',
         padding:8,
         marginTop:8,
+        marginBottom:8,
         justifyContent:'center',
     },
     textCounter:{
         fontSize:32,
-        color:'#424242',
+        color:'#000',
         textAlign:'center',
         fontWeight:'bold',
         padding:8,
