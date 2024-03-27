@@ -14,6 +14,21 @@ const styles = StyleSheet.create ({
         fontWeight: 'bold',
         color: '#B71C1C',
     },
+    txtSaida: {
+        margin: 20,
+        fontSize: 25,
+        color: '#e53935',
+    },
+    txtEntrada: {
+        borderWidth: 3,
+        textAlign: 'center',
+        fontSize: 22,
+        borderColor: '#b71c1c',
+        height: 40,
+        width: '70%',
+        color: '#53935',
+        borderRadius: 10,
+    },
 })
 
 export default styles;
