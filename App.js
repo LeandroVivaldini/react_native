@@ -24,7 +24,7 @@
 // });
 //------------------------------------------------------------------------
 import * as React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TextInput} from 'react-native';
 import Constants from 'expo-constants';
 // import Index from './src/atividade1/index.js';
 // import Exemplo_3 from './src/ex_3/index.js';
@@ -46,7 +46,8 @@ const styles=StyleSheet.create({
   container:{
     flex:1,
     justifyContent:'center',
-    alignItems:'center',
+    // alignItems:'center',
+    // paddingTop: Constants.statusBarHeight,
     backgroundColor:'#B71C1C',
     padding:8,
   },
